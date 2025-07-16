@@ -68,7 +68,6 @@ IA Integrada: Geração automática de relatórios semanais com análise prediti
 # 9. Assistente Virtual (IA)
 Chatbot embutido no sistema para tirar dúvidas dos usuários (ex: "Como cadastro um novo cliente?")
 
-Suporte básico 24/7 usando IA com NLP.
+## Em Desenvolvimento...
 
-Pode ser implementado com o Azure Cognitive Services ou OpenAI API.
 
