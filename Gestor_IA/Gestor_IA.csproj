@@ -178,35 +178,8 @@
     <Compile Include="Classes\Cadastro_de_vendedores.cs" />
     <Compile Include="Classes\Cadastro_vendas.cs" />
     <Compile Include="Classes\Mercadorias.cs" />
-    <Compile Include="Formularios\Dashboard.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\Dashboard.Designer.cs">
-      <DependentUpon>Dashboard.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\logs.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\logs.Designer.cs">
-      <DependentUpon>logs.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\PDV.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\PDV.Designer.cs">
-      <DependentUpon>PDV.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Formularios\Dashboard.resx">
-      <DependentUpon>Dashboard.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\logs.resx">
-      <DependentUpon>logs.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\PDV.resx">
-      <DependentUpon>PDV.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -234,6 +207,7 @@
     <Content Include="MetroFramework.txt" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Formularios\" />
     <Folder Include="Imagens\icons\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
