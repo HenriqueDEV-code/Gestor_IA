@@ -17,7 +17,7 @@ namespace Gestor_IA
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new logs());
+            Application.Run(new DashBoard());
         }
     }
 }
