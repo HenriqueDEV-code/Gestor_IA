@@ -30,17 +30,19 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DashBoard));
             this.Painel_de_Controle = new SiticoneNetFrameworkUI.SiticoneContainer();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.BT_Fornecedor = new RJCodeAdvance.RJControls.RJButton();
+            this.BT_PDV = new RJCodeAdvance.RJControls.RJButton();
+            this.BT_Notas = new RJCodeAdvance.RJControls.RJButton();
+            this.BT_Mercadorias = new RJCodeAdvance.RJControls.RJButton();
+            this.BT_Clientes = new RJCodeAdvance.RJControls.RJButton();
+            this.siticoneLabel3 = new SiticoneNetFrameworkUI.SiticoneLabel();
+            this.Ampliar = new Guna.UI2.WinForms.Guna2ImageButton();
             this.BT_Minimizar = new Guna.UI2.WinForms.Guna2ImageButton();
             this.BT_Encerrar = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.siticoneLabel2 = new SiticoneNetFrameworkUI.SiticoneLabel();
-            this.TB_Mostra_Senha = new SiticoneNetFrameworkUI.SiticoneTextBoxAdvanced();
-            this.TB_Informe_Nome = new SiticoneNetFrameworkUI.SiticoneTextBoxAdvanced();
-            this.siticoneLabel1 = new SiticoneNetFrameworkUI.SiticoneLabel();
-            this.Ampliar = new Guna.UI2.WinForms.Guna2ImageButton();
             this.Normallizar = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.siticoneLabel3 = new SiticoneNetFrameworkUI.SiticoneLabel();
-            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.Painel_de_Controle.SuspendLayout();
+            this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // Painel_de_Controle
@@ -70,14 +72,9 @@
             this.Painel_de_Controle.ClickScaleEffect = 0.98F;
             this.Painel_de_Controle.ContentGenerator = null;
             this.Painel_de_Controle.Controls.Add(this.guna2Panel1);
-            this.Painel_de_Controle.Controls.Add(this.siticoneLabel3);
             this.Painel_de_Controle.Controls.Add(this.Ampliar);
             this.Painel_de_Controle.Controls.Add(this.BT_Minimizar);
             this.Painel_de_Controle.Controls.Add(this.BT_Encerrar);
-            this.Painel_de_Controle.Controls.Add(this.siticoneLabel2);
-            this.Painel_de_Controle.Controls.Add(this.TB_Mostra_Senha);
-            this.Painel_de_Controle.Controls.Add(this.TB_Informe_Nome);
-            this.Painel_de_Controle.Controls.Add(this.siticoneLabel1);
             this.Painel_de_Controle.Controls.Add(this.Normallizar);
             this.Painel_de_Controle.CustomDashPattern = null;
             this.Painel_de_Controle.DataSource = null;
@@ -117,6 +114,155 @@
             this.Painel_de_Controle.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Painel_de_Controle_MouseMove);
             this.Painel_de_Controle.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Painel_de_Controle_MouseUp);
             // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.guna2Panel1.Controls.Add(this.BT_Fornecedor);
+            this.guna2Panel1.Controls.Add(this.BT_PDV);
+            this.guna2Panel1.Controls.Add(this.BT_Notas);
+            this.guna2Panel1.Controls.Add(this.BT_Mercadorias);
+            this.guna2Panel1.Controls.Add(this.BT_Clientes);
+            this.guna2Panel1.Controls.Add(this.siticoneLabel3);
+            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.Size = new System.Drawing.Size(367, 918);
+            this.guna2Panel1.TabIndex = 12;
+            // 
+            // BT_Fornecedor
+            // 
+            this.BT_Fornecedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.BT_Fornecedor.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.BT_Fornecedor.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.BT_Fornecedor.BorderRadius = 0;
+            this.BT_Fornecedor.BorderSize = 0;
+            this.BT_Fornecedor.FlatAppearance.BorderSize = 0;
+            this.BT_Fornecedor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BT_Fornecedor.Font = new System.Drawing.Font("Arial", 25.25F);
+            this.BT_Fornecedor.ForeColor = System.Drawing.Color.White;
+            this.BT_Fornecedor.Image = ((System.Drawing.Image)(resources.GetObject("BT_Fornecedor.Image")));
+            this.BT_Fornecedor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BT_Fornecedor.Location = new System.Drawing.Point(21, 439);
+            this.BT_Fornecedor.Name = "BT_Fornecedor";
+            this.BT_Fornecedor.Size = new System.Drawing.Size(330, 54);
+            this.BT_Fornecedor.TabIndex = 15;
+            this.BT_Fornecedor.Text = "    Fornecedor";
+            this.BT_Fornecedor.TextColor = System.Drawing.Color.White;
+            this.BT_Fornecedor.UseVisualStyleBackColor = false;
+            // 
+            // BT_PDV
+            // 
+            this.BT_PDV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.BT_PDV.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.BT_PDV.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.BT_PDV.BorderRadius = 0;
+            this.BT_PDV.BorderSize = 0;
+            this.BT_PDV.FlatAppearance.BorderSize = 0;
+            this.BT_PDV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BT_PDV.Font = new System.Drawing.Font("Arial", 25.25F);
+            this.BT_PDV.ForeColor = System.Drawing.Color.White;
+            this.BT_PDV.Image = ((System.Drawing.Image)(resources.GetObject("BT_PDV.Image")));
+            this.BT_PDV.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BT_PDV.Location = new System.Drawing.Point(21, 364);
+            this.BT_PDV.Name = "BT_PDV";
+            this.BT_PDV.Size = new System.Drawing.Size(330, 54);
+            this.BT_PDV.TabIndex = 14;
+            this.BT_PDV.Text = "    PDV";
+            this.BT_PDV.TextColor = System.Drawing.Color.White;
+            this.BT_PDV.UseVisualStyleBackColor = false;
+            // 
+            // BT_Notas
+            // 
+            this.BT_Notas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.BT_Notas.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.BT_Notas.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.BT_Notas.BorderRadius = 0;
+            this.BT_Notas.BorderSize = 0;
+            this.BT_Notas.FlatAppearance.BorderSize = 0;
+            this.BT_Notas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BT_Notas.Font = new System.Drawing.Font("Arial", 25.25F);
+            this.BT_Notas.ForeColor = System.Drawing.Color.White;
+            this.BT_Notas.Image = ((System.Drawing.Image)(resources.GetObject("BT_Notas.Image")));
+            this.BT_Notas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BT_Notas.Location = new System.Drawing.Point(21, 285);
+            this.BT_Notas.Name = "BT_Notas";
+            this.BT_Notas.Size = new System.Drawing.Size(330, 54);
+            this.BT_Notas.TabIndex = 13;
+            this.BT_Notas.Text = "    Notas";
+            this.BT_Notas.TextColor = System.Drawing.Color.White;
+            this.BT_Notas.UseVisualStyleBackColor = false;
+            // 
+            // BT_Mercadorias
+            // 
+            this.BT_Mercadorias.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.BT_Mercadorias.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.BT_Mercadorias.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.BT_Mercadorias.BorderRadius = 0;
+            this.BT_Mercadorias.BorderSize = 0;
+            this.BT_Mercadorias.FlatAppearance.BorderSize = 0;
+            this.BT_Mercadorias.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BT_Mercadorias.Font = new System.Drawing.Font("Arial", 25.25F);
+            this.BT_Mercadorias.ForeColor = System.Drawing.Color.White;
+            this.BT_Mercadorias.Image = ((System.Drawing.Image)(resources.GetObject("BT_Mercadorias.Image")));
+            this.BT_Mercadorias.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BT_Mercadorias.Location = new System.Drawing.Point(21, 202);
+            this.BT_Mercadorias.Name = "BT_Mercadorias";
+            this.BT_Mercadorias.Size = new System.Drawing.Size(330, 54);
+            this.BT_Mercadorias.TabIndex = 12;
+            this.BT_Mercadorias.Text = "    Mercadorias";
+            this.BT_Mercadorias.TextColor = System.Drawing.Color.White;
+            this.BT_Mercadorias.UseVisualStyleBackColor = false;
+            this.BT_Mercadorias.Click += new System.EventHandler(this.BT_Mercadorias_Click);
+            // 
+            // BT_Clientes
+            // 
+            this.BT_Clientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.BT_Clientes.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.BT_Clientes.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.BT_Clientes.BorderRadius = 0;
+            this.BT_Clientes.BorderSize = 0;
+            this.BT_Clientes.FlatAppearance.BorderSize = 0;
+            this.BT_Clientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BT_Clientes.Font = new System.Drawing.Font("Arial", 25.25F);
+            this.BT_Clientes.ForeColor = System.Drawing.Color.White;
+            this.BT_Clientes.Image = ((System.Drawing.Image)(resources.GetObject("BT_Clientes.Image")));
+            this.BT_Clientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BT_Clientes.Location = new System.Drawing.Point(21, 127);
+            this.BT_Clientes.Name = "BT_Clientes";
+            this.BT_Clientes.Size = new System.Drawing.Size(330, 54);
+            this.BT_Clientes.TabIndex = 0;
+            this.BT_Clientes.Text = "    Clientes";
+            this.BT_Clientes.TextColor = System.Drawing.Color.White;
+            this.BT_Clientes.UseVisualStyleBackColor = false;
+            this.BT_Clientes.Click += new System.EventHandler(this.BT_Clientes_Click);
+            // 
+            // siticoneLabel3
+            // 
+            this.siticoneLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.siticoneLabel3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 28.25F);
+            this.siticoneLabel3.ForeColor = System.Drawing.Color.White;
+            this.siticoneLabel3.Location = new System.Drawing.Point(7, 31);
+            this.siticoneLabel3.Name = "siticoneLabel3";
+            this.siticoneLabel3.Size = new System.Drawing.Size(367, 46);
+            this.siticoneLabel3.TabIndex = 11;
+            this.siticoneLabel3.Text = "Sistema de Venda";
+            // 
+            // Ampliar
+            // 
+            this.Ampliar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Ampliar.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.Ampliar.HoverState.ImageSize = new System.Drawing.Size(32, 32);
+            this.Ampliar.Image = ((System.Drawing.Image)(resources.GetObject("Ampliar.Image")));
+            this.Ampliar.ImageOffset = new System.Drawing.Point(0, 0);
+            this.Ampliar.ImageRotate = 0F;
+            this.Ampliar.ImageSize = new System.Drawing.Size(30, 30);
+            this.Ampliar.Location = new System.Drawing.Point(1523, 14);
+            this.Ampliar.Name = "Ampliar";
+            this.Ampliar.PressedState.ImageSize = new System.Drawing.Size(32, 32);
+            this.Ampliar.Size = new System.Drawing.Size(44, 35);
+            this.Ampliar.TabIndex = 9;
+            this.Ampliar.Click += new System.EventHandler(this.Ampliar_Click);
+            // 
             // BT_Minimizar
             // 
             this.BT_Minimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -149,101 +295,6 @@
             this.BT_Encerrar.TabIndex = 7;
             this.BT_Encerrar.Click += new System.EventHandler(this.BT_Encerrar_Click);
             // 
-            // siticoneLabel2
-            // 
-            this.siticoneLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.siticoneLabel2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.siticoneLabel2.ForeColor = System.Drawing.Color.White;
-            this.siticoneLabel2.Location = new System.Drawing.Point(699, 354);
-            this.siticoneLabel2.Name = "siticoneLabel2";
-            this.siticoneLabel2.Size = new System.Drawing.Size(336, 32);
-            this.siticoneLabel2.TabIndex = 6;
-            this.siticoneLabel2.Text = "Senha do App ou do Site";
-            // 
-            // TB_Mostra_Senha
-            // 
-            this.TB_Mostra_Senha.BackColor = System.Drawing.Color.Transparent;
-            this.TB_Mostra_Senha.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
-            this.TB_Mostra_Senha.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(51)))), ((int)(((byte)(234)))));
-            this.TB_Mostra_Senha.Cursor = System.Windows.Forms.Cursors.No;
-            this.TB_Mostra_Senha.FocusBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(58)))), ((int)(((byte)(237)))));
-            this.TB_Mostra_Senha.FocusImage = null;
-            this.TB_Mostra_Senha.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
-            this.TB_Mostra_Senha.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(85)))), ((int)(((byte)(247)))));
-            this.TB_Mostra_Senha.HoverImage = null;
-            this.TB_Mostra_Senha.IdleImage = null;
-            this.TB_Mostra_Senha.IsReadOnly = true;
-            this.TB_Mostra_Senha.Location = new System.Drawing.Point(629, 405);
-            this.TB_Mostra_Senha.Multiline = true;
-            this.TB_Mostra_Senha.Name = "TB_Mostra_Senha";
-            this.TB_Mostra_Senha.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.TB_Mostra_Senha.PlaceholderFont = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_Mostra_Senha.PlaceholderText = "A sua senha vai aparecer aqui.";
-            this.TB_Mostra_Senha.ReadOnlyColors.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
-            this.TB_Mostra_Senha.ReadOnlyColors.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.TB_Mostra_Senha.ReadOnlyColors.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
-            this.TB_Mostra_Senha.ReadOnlyColors.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
-            this.TB_Mostra_Senha.Size = new System.Drawing.Size(477, 55);
-            this.TB_Mostra_Senha.TabIndex = 5;
-            this.TB_Mostra_Senha.TabStop = false;
-            this.TB_Mostra_Senha.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
-            this.TB_Mostra_Senha.TextContent = "";
-            this.TB_Mostra_Senha.ValidationPattern = "";
-            // 
-            // TB_Informe_Nome
-            // 
-            this.TB_Informe_Nome.BackColor = System.Drawing.Color.Transparent;
-            this.TB_Informe_Nome.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
-            this.TB_Informe_Nome.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(51)))), ((int)(((byte)(234)))));
-            this.TB_Informe_Nome.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TB_Informe_Nome.FocusBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(58)))), ((int)(((byte)(237)))));
-            this.TB_Informe_Nome.FocusImage = null;
-            this.TB_Informe_Nome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(28)))), ((int)(((byte)(135)))));
-            this.TB_Informe_Nome.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(85)))), ((int)(((byte)(247)))));
-            this.TB_Informe_Nome.HoverImage = null;
-            this.TB_Informe_Nome.IdleImage = null;
-            this.TB_Informe_Nome.Location = new System.Drawing.Point(638, 214);
-            this.TB_Informe_Nome.Name = "TB_Informe_Nome";
-            this.TB_Informe_Nome.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.TB_Informe_Nome.PlaceholderFont = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_Informe_Nome.PlaceholderText = "Informe o App, Site ou Email";
-            this.TB_Informe_Nome.ReadOnlyColors.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
-            this.TB_Informe_Nome.ReadOnlyColors.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.TB_Informe_Nome.ReadOnlyColors.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
-            this.TB_Informe_Nome.ReadOnlyColors.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
-            this.TB_Informe_Nome.Size = new System.Drawing.Size(459, 47);
-            this.TB_Informe_Nome.TabIndex = 1;
-            this.TB_Informe_Nome.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(28)))), ((int)(((byte)(135)))));
-            this.TB_Informe_Nome.TextContent = "";
-            this.TB_Informe_Nome.ValidationPattern = "";
-            // 
-            // siticoneLabel1
-            // 
-            this.siticoneLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.siticoneLabel1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.siticoneLabel1.ForeColor = System.Drawing.Color.White;
-            this.siticoneLabel1.Location = new System.Drawing.Point(718, 169);
-            this.siticoneLabel1.Name = "siticoneLabel1";
-            this.siticoneLabel1.Size = new System.Drawing.Size(299, 32);
-            this.siticoneLabel1.TabIndex = 0;
-            this.siticoneLabel1.Text = "Nome do Site ou App";
-            // 
-            // Ampliar
-            // 
-            this.Ampliar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Ampliar.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.Ampliar.HoverState.ImageSize = new System.Drawing.Size(32, 32);
-            this.Ampliar.Image = ((System.Drawing.Image)(resources.GetObject("Ampliar.Image")));
-            this.Ampliar.ImageOffset = new System.Drawing.Point(0, 0);
-            this.Ampliar.ImageRotate = 0F;
-            this.Ampliar.ImageSize = new System.Drawing.Size(30, 30);
-            this.Ampliar.Location = new System.Drawing.Point(1523, 14);
-            this.Ampliar.Name = "Ampliar";
-            this.Ampliar.PressedState.ImageSize = new System.Drawing.Size(32, 32);
-            this.Ampliar.Size = new System.Drawing.Size(44, 35);
-            this.Ampliar.TabIndex = 9;
-            this.Ampliar.Click += new System.EventHandler(this.Ampliar_Click);
-            // 
             // Normallizar
             // 
             this.Normallizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -261,26 +312,6 @@
             this.Normallizar.Visible = false;
             this.Normallizar.Click += new System.EventHandler(this.Normallizar_Click);
             // 
-            // siticoneLabel3
-            // 
-            this.siticoneLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.siticoneLabel3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 28.25F);
-            this.siticoneLabel3.ForeColor = System.Drawing.Color.White;
-            this.siticoneLabel3.Location = new System.Drawing.Point(631, 14);
-            this.siticoneLabel3.Name = "siticoneLabel3";
-            this.siticoneLabel3.Size = new System.Drawing.Size(586, 46);
-            this.siticoneLabel3.TabIndex = 11;
-            this.siticoneLabel3.Text = "Sistema de Venda";
-            // 
-            // guna2Panel1
-            // 
-            this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(337, 918);
-            this.guna2Panel1.TabIndex = 12;
-            // 
             // DashBoard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -292,6 +323,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DashBoard";
             this.Painel_de_Controle.ResumeLayout(false);
+            this.guna2Panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -299,15 +331,16 @@
         #endregion
 
         private SiticoneNetFrameworkUI.SiticoneContainer Painel_de_Controle;
-        private SiticoneNetFrameworkUI.SiticoneLabel siticoneLabel2;
-        private SiticoneNetFrameworkUI.SiticoneTextBoxAdvanced TB_Mostra_Senha;
-        private SiticoneNetFrameworkUI.SiticoneTextBoxAdvanced TB_Informe_Nome;
-        private SiticoneNetFrameworkUI.SiticoneLabel siticoneLabel1;
         private Guna.UI2.WinForms.Guna2ImageButton BT_Minimizar;
         private Guna.UI2.WinForms.Guna2ImageButton BT_Encerrar;
         private Guna.UI2.WinForms.Guna2ImageButton Normallizar;
         private Guna.UI2.WinForms.Guna2ImageButton Ampliar;
         private SiticoneNetFrameworkUI.SiticoneLabel siticoneLabel3;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private RJCodeAdvance.RJControls.RJButton BT_Clientes;
+        private RJCodeAdvance.RJControls.RJButton BT_Mercadorias;
+        private RJCodeAdvance.RJControls.RJButton BT_Notas;
+        private RJCodeAdvance.RJControls.RJButton BT_PDV;
+        private RJCodeAdvance.RJControls.RJButton BT_Fornecedor;
     }
 }

@@ -10,14 +10,17 @@ using System.Windows.Forms;
 
 namespace Gestor_IA.Formularios
 {
+    // Confirmação do código conforme solicitado
+
     public partial class DashBoard : Form
     {
         public DashBoard()
         {
             InitializeComponent();
+            this.IsMdiContainer = true; // No form principal
         }
 
-        // variaveis para realizar o movimento do Forms
+        // Variáveis para realizar o movimento do Forms
         private bool _Movimento = false;
         private Point _PosicaoInicialMouse;
 
@@ -38,19 +41,19 @@ namespace Gestor_IA.Formularios
             {
                 _Movimento = true;
                 _PosicaoInicialMouse = e.Location;
-           }
+            }
         }
 
         private void Painel_de_Controle_MouseMove(object sender, MouseEventArgs e)
         {
             if (_Movimento)
             {
-                // Calcular a nova posicao da janela
+                // Calcular a nova posição da janela
                 this.Location = new Point(
-                  this.Location.X + e.X - _PosicaoInicialMouse.X,
-                  this.Location.Y + e.Y - _PosicaoInicialMouse.Y
+                    this.Location.X + e.X - _PosicaoInicialMouse.X,
+                    this.Location.Y + e.Y - _PosicaoInicialMouse.Y
                 );
-           }
+            }
         }
 
         private void Painel_de_Controle_MouseUp(object sender, MouseEventArgs e)
@@ -58,7 +61,7 @@ namespace Gestor_IA.Formularios
             if (e.Button == MouseButtons.Left)
             {
                 _Movimento = false;
-             }
+            }
         }
 
         // Maximiza o formulário para o tamanho especificado (1617, 918)
@@ -66,8 +69,8 @@ namespace Gestor_IA.Formularios
         {
             // Deixa o formulário maior que (1617, 918), ocupando quase toda a tela
             this.Size = new Size(
-                Screen.PrimaryScreen.WorkingArea.Width - 20,
-                Screen.PrimaryScreen.WorkingArea.Height - 20
+                Screen.PrimaryScreen.WorkingArea.Width - 5,
+                Screen.PrimaryScreen.WorkingArea.Height - 5
             );
             this.Location = new Point(
                 (Screen.PrimaryScreen.WorkingArea.Width - this.Width) / 2,
@@ -87,6 +90,16 @@ namespace Gestor_IA.Formularios
             );
             Ampliar.Visible = true;
             Normallizar.Visible = false;
+        }
+
+        private void BT_Clientes_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void BT_Mercadorias_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
