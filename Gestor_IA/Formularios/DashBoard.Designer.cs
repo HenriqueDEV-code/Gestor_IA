@@ -30,8 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DashBoard));
             this.Painel_de_Controle = new SiticoneNetFrameworkUI.SiticoneContainer();
+            this.Control_PDV = new SiticoneNetFrameworkUI.SiticonePinnablePanelHost();
+            this.rjButton4 = new RJCodeAdvance.RJControls.RJButton();
+            this.Control_Notas = new SiticoneNetFrameworkUI.SiticonePinnablePanelHost();
+            this.rjButton3 = new RJCodeAdvance.RJControls.RJButton();
+            this.Control_Mercadorias = new SiticoneNetFrameworkUI.SiticonePinnablePanelHost();
+            this.rjButton2 = new RJCodeAdvance.RJControls.RJButton();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.BT_Fornecedor = new RJCodeAdvance.RJControls.RJButton();
             this.BT_PDV = new RJCodeAdvance.RJControls.RJButton();
             this.BT_Notas = new RJCodeAdvance.RJControls.RJButton();
             this.BT_Mercadorias = new RJCodeAdvance.RJControls.RJButton();
@@ -41,8 +46,31 @@
             this.BT_Minimizar = new Guna.UI2.WinForms.Guna2ImageButton();
             this.BT_Encerrar = new Guna.UI2.WinForms.Guna2ImageButton();
             this.Normallizar = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.rjButton1 = new RJCodeAdvance.RJControls.RJButton();
+            this.siticoneLabel1 = new SiticoneNetFrameworkUI.SiticoneLabel();
+            this.siticoneTextBoxAdvanced1 = new SiticoneNetFrameworkUI.SiticoneTextBoxAdvanced();
+            this.siticoneLabel2 = new SiticoneNetFrameworkUI.SiticoneLabel();
+            this.siticoneTextBoxAdvanced2 = new SiticoneNetFrameworkUI.SiticoneTextBoxAdvanced();
+            this.siticoneLabel4 = new SiticoneNetFrameworkUI.SiticoneLabel();
+            this.siticoneTextBoxAdvanced3 = new SiticoneNetFrameworkUI.SiticoneTextBoxAdvanced();
+            this.siticoneLabel5 = new SiticoneNetFrameworkUI.SiticoneLabel();
+            this.siticoneTextBoxAdvanced4 = new SiticoneNetFrameworkUI.SiticoneTextBoxAdvanced();
+            this.Control_Clientes = new SiticoneNetFrameworkUI.SiticonePinnablePanelHost();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.siticoneTextBoxAdvanced5 = new SiticoneNetFrameworkUI.SiticoneTextBoxAdvanced();
+            this.siticoneLabel6 = new SiticoneNetFrameworkUI.SiticoneLabel();
+            this.siticoneTextBoxAdvanced6 = new SiticoneNetFrameworkUI.SiticoneTextBoxAdvanced();
+            this.siticoneLabel7 = new SiticoneNetFrameworkUI.SiticoneLabel();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.Painel_de_Controle.SuspendLayout();
+            this.Control_PDV.SuspendLayout();
+            this.Control_Notas.SuspendLayout();
+            this.Control_Mercadorias.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
+            this.Control_Clientes.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // Painel_de_Controle
@@ -71,11 +99,15 @@
             this.Painel_de_Controle.CanShake = true;
             this.Painel_de_Controle.ClickScaleEffect = 0.98F;
             this.Painel_de_Controle.ContentGenerator = null;
+            this.Painel_de_Controle.Controls.Add(this.Control_Clientes);
             this.Painel_de_Controle.Controls.Add(this.guna2Panel1);
             this.Painel_de_Controle.Controls.Add(this.Ampliar);
             this.Painel_de_Controle.Controls.Add(this.BT_Minimizar);
             this.Painel_de_Controle.Controls.Add(this.BT_Encerrar);
             this.Painel_de_Controle.Controls.Add(this.Normallizar);
+            this.Painel_de_Controle.Controls.Add(this.Control_PDV);
+            this.Painel_de_Controle.Controls.Add(this.Control_Notas);
+            this.Painel_de_Controle.Controls.Add(this.Control_Mercadorias);
             this.Painel_de_Controle.CustomDashPattern = null;
             this.Painel_de_Controle.DataSource = null;
             this.Painel_de_Controle.Elevation = 0;
@@ -114,10 +146,138 @@
             this.Painel_de_Controle.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Painel_de_Controle_MouseMove);
             this.Painel_de_Controle.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Painel_de_Controle_MouseUp);
             // 
+            // Control_PDV
+            // 
+            this.Control_PDV.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Control_PDV.AutoScroll = true;
+            this.Control_PDV.AutoScrollMinSize = new System.Drawing.Size(0, 20);
+            this.Control_PDV.BackColor = System.Drawing.Color.Transparent;
+            this.Control_PDV.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.Control_PDV.Controls.Add(this.rjButton4);
+            this.Control_PDV.Location = new System.Drawing.Point(394, 64);
+            this.Control_PDV.Name = "Control_PDV";
+            this.Control_PDV.Padding = new System.Windows.Forms.Padding(10);
+            this.Control_PDV.PinnedSectionHeaderBackColor = System.Drawing.Color.White;
+            this.Control_PDV.PinnedSectionHeaderFont = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.Control_PDV.SectionHeaderFont = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.Control_PDV.Size = new System.Drawing.Size(1173, 802);
+            this.Control_PDV.TabIndex = 16;
+            this.Control_PDV.UnpinnedSectionHeaderBackColor = System.Drawing.Color.White;
+            this.Control_PDV.UnpinnedSectionHeaderFont = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.Control_PDV.Visible = false;
+            // 
+            // rjButton4
+            // 
+            this.rjButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.rjButton4.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.rjButton4.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rjButton4.BorderRadius = 0;
+            this.rjButton4.BorderSize = 0;
+            this.rjButton4.FlatAppearance.BorderSize = 0;
+            this.rjButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton4.Font = new System.Drawing.Font("Arial", 25.25F);
+            this.rjButton4.ForeColor = System.Drawing.Color.White;
+            this.rjButton4.Image = ((System.Drawing.Image)(resources.GetObject("rjButton4.Image")));
+            this.rjButton4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.rjButton4.Location = new System.Drawing.Point(379, 13);
+            this.rjButton4.Name = "rjButton4";
+            this.rjButton4.Size = new System.Drawing.Size(330, 54);
+            this.rjButton4.TabIndex = 15;
+            this.rjButton4.Text = "    PDV";
+            this.rjButton4.TextColor = System.Drawing.Color.White;
+            this.rjButton4.UseVisualStyleBackColor = false;
+            // 
+            // Control_Notas
+            // 
+            this.Control_Notas.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Control_Notas.AutoScroll = true;
+            this.Control_Notas.AutoScrollMinSize = new System.Drawing.Size(0, 20);
+            this.Control_Notas.BackColor = System.Drawing.Color.Transparent;
+            this.Control_Notas.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.Control_Notas.Controls.Add(this.rjButton3);
+            this.Control_Notas.Location = new System.Drawing.Point(394, 64);
+            this.Control_Notas.Name = "Control_Notas";
+            this.Control_Notas.Padding = new System.Windows.Forms.Padding(10);
+            this.Control_Notas.PinnedSectionHeaderBackColor = System.Drawing.Color.White;
+            this.Control_Notas.PinnedSectionHeaderFont = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.Control_Notas.SectionHeaderFont = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.Control_Notas.Size = new System.Drawing.Size(1173, 802);
+            this.Control_Notas.TabIndex = 15;
+            this.Control_Notas.UnpinnedSectionHeaderBackColor = System.Drawing.Color.White;
+            this.Control_Notas.UnpinnedSectionHeaderFont = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.Control_Notas.Visible = false;
+            // 
+            // rjButton3
+            // 
+            this.rjButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.rjButton3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.rjButton3.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rjButton3.BorderRadius = 0;
+            this.rjButton3.BorderSize = 0;
+            this.rjButton3.FlatAppearance.BorderSize = 0;
+            this.rjButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton3.Font = new System.Drawing.Font("Arial", 25.25F);
+            this.rjButton3.ForeColor = System.Drawing.Color.White;
+            this.rjButton3.Image = ((System.Drawing.Image)(resources.GetObject("rjButton3.Image")));
+            this.rjButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.rjButton3.Location = new System.Drawing.Point(364, 13);
+            this.rjButton3.Name = "rjButton3";
+            this.rjButton3.Size = new System.Drawing.Size(330, 54);
+            this.rjButton3.TabIndex = 14;
+            this.rjButton3.Text = "    Notas";
+            this.rjButton3.TextColor = System.Drawing.Color.White;
+            this.rjButton3.UseVisualStyleBackColor = false;
+            // 
+            // Control_Mercadorias
+            // 
+            this.Control_Mercadorias.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Control_Mercadorias.AutoScroll = true;
+            this.Control_Mercadorias.AutoScrollMinSize = new System.Drawing.Size(0, 20);
+            this.Control_Mercadorias.BackColor = System.Drawing.Color.Transparent;
+            this.Control_Mercadorias.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.Control_Mercadorias.Controls.Add(this.rjButton2);
+            this.Control_Mercadorias.Location = new System.Drawing.Point(394, 64);
+            this.Control_Mercadorias.Name = "Control_Mercadorias";
+            this.Control_Mercadorias.Padding = new System.Windows.Forms.Padding(10);
+            this.Control_Mercadorias.PinnedSectionHeaderBackColor = System.Drawing.Color.White;
+            this.Control_Mercadorias.PinnedSectionHeaderFont = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.Control_Mercadorias.SectionHeaderFont = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.Control_Mercadorias.Size = new System.Drawing.Size(1173, 802);
+            this.Control_Mercadorias.TabIndex = 14;
+            this.Control_Mercadorias.UnpinnedSectionHeaderBackColor = System.Drawing.Color.White;
+            this.Control_Mercadorias.UnpinnedSectionHeaderFont = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.Control_Mercadorias.Visible = false;
+            // 
+            // rjButton2
+            // 
+            this.rjButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.rjButton2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.rjButton2.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rjButton2.BorderRadius = 0;
+            this.rjButton2.BorderSize = 0;
+            this.rjButton2.FlatAppearance.BorderSize = 0;
+            this.rjButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton2.Font = new System.Drawing.Font("Arial", 25.25F);
+            this.rjButton2.ForeColor = System.Drawing.Color.White;
+            this.rjButton2.Image = ((System.Drawing.Image)(resources.GetObject("rjButton2.Image")));
+            this.rjButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.rjButton2.Location = new System.Drawing.Point(364, 13);
+            this.rjButton2.Name = "rjButton2";
+            this.rjButton2.Size = new System.Drawing.Size(330, 54);
+            this.rjButton2.TabIndex = 13;
+            this.rjButton2.Text = "    Mercadorias";
+            this.rjButton2.TextColor = System.Drawing.Color.White;
+            this.rjButton2.UseVisualStyleBackColor = false;
+            // 
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.guna2Panel1.Controls.Add(this.BT_Fornecedor);
             this.guna2Panel1.Controls.Add(this.BT_PDV);
             this.guna2Panel1.Controls.Add(this.BT_Notas);
             this.guna2Panel1.Controls.Add(this.BT_Mercadorias);
@@ -128,27 +288,6 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(367, 918);
             this.guna2Panel1.TabIndex = 12;
-            // 
-            // BT_Fornecedor
-            // 
-            this.BT_Fornecedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.BT_Fornecedor.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.BT_Fornecedor.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.BT_Fornecedor.BorderRadius = 0;
-            this.BT_Fornecedor.BorderSize = 0;
-            this.BT_Fornecedor.FlatAppearance.BorderSize = 0;
-            this.BT_Fornecedor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BT_Fornecedor.Font = new System.Drawing.Font("Arial", 25.25F);
-            this.BT_Fornecedor.ForeColor = System.Drawing.Color.White;
-            this.BT_Fornecedor.Image = ((System.Drawing.Image)(resources.GetObject("BT_Fornecedor.Image")));
-            this.BT_Fornecedor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BT_Fornecedor.Location = new System.Drawing.Point(21, 439);
-            this.BT_Fornecedor.Name = "BT_Fornecedor";
-            this.BT_Fornecedor.Size = new System.Drawing.Size(330, 54);
-            this.BT_Fornecedor.TabIndex = 15;
-            this.BT_Fornecedor.Text = "    Fornecedor";
-            this.BT_Fornecedor.TextColor = System.Drawing.Color.White;
-            this.BT_Fornecedor.UseVisualStyleBackColor = false;
             // 
             // BT_PDV
             // 
@@ -170,6 +309,7 @@
             this.BT_PDV.Text = "    PDV";
             this.BT_PDV.TextColor = System.Drawing.Color.White;
             this.BT_PDV.UseVisualStyleBackColor = false;
+            this.BT_PDV.Click += new System.EventHandler(this.BT_PDV_Click);
             // 
             // BT_Notas
             // 
@@ -191,6 +331,7 @@
             this.BT_Notas.Text = "    Notas";
             this.BT_Notas.TextColor = System.Drawing.Color.White;
             this.BT_Notas.UseVisualStyleBackColor = false;
+            this.BT_Notas.Click += new System.EventHandler(this.BT_Notas_Click);
             // 
             // BT_Mercadorias
             // 
@@ -312,6 +453,335 @@
             this.Normallizar.Visible = false;
             this.Normallizar.Click += new System.EventHandler(this.Normallizar_Click);
             // 
+            // rjButton1
+            // 
+            this.rjButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.rjButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.rjButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rjButton1.BorderRadius = 0;
+            this.rjButton1.BorderSize = 0;
+            this.rjButton1.FlatAppearance.BorderSize = 0;
+            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton1.Font = new System.Drawing.Font("Arial", 25.25F);
+            this.rjButton1.ForeColor = System.Drawing.Color.White;
+            this.rjButton1.Image = ((System.Drawing.Image)(resources.GetObject("rjButton1.Image")));
+            this.rjButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.rjButton1.Location = new System.Drawing.Point(364, 13);
+            this.rjButton1.Name = "rjButton1";
+            this.rjButton1.Size = new System.Drawing.Size(330, 54);
+            this.rjButton1.TabIndex = 1;
+            this.rjButton1.Text = "    Clientes";
+            this.rjButton1.TextColor = System.Drawing.Color.White;
+            this.rjButton1.UseVisualStyleBackColor = false;
+            // 
+            // siticoneLabel1
+            // 
+            this.siticoneLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.siticoneLabel1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.siticoneLabel1.ForeColor = System.Drawing.Color.White;
+            this.siticoneLabel1.Location = new System.Drawing.Point(3, 11);
+            this.siticoneLabel1.Name = "siticoneLabel1";
+            this.siticoneLabel1.Size = new System.Drawing.Size(124, 24);
+            this.siticoneLabel1.TabIndex = 12;
+            this.siticoneLabel1.Text = "CPF/CNPJ:";
+            // 
+            // siticoneTextBoxAdvanced1
+            // 
+            this.siticoneTextBoxAdvanced1.BackColor = System.Drawing.Color.Transparent;
+            this.siticoneTextBoxAdvanced1.BackgroundColor = System.Drawing.Color.White;
+            this.siticoneTextBoxAdvanced1.BorderColor = System.Drawing.Color.SteelBlue;
+            this.siticoneTextBoxAdvanced1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.siticoneTextBoxAdvanced1.FocusBorderColor = System.Drawing.Color.DodgerBlue;
+            this.siticoneTextBoxAdvanced1.FocusImage = null;
+            this.siticoneTextBoxAdvanced1.HoverBorderColor = System.Drawing.Color.Gray;
+            this.siticoneTextBoxAdvanced1.HoverImage = null;
+            this.siticoneTextBoxAdvanced1.IdleImage = null;
+            this.siticoneTextBoxAdvanced1.Location = new System.Drawing.Point(133, 8);
+            this.siticoneTextBoxAdvanced1.Name = "siticoneTextBoxAdvanced1";
+            this.siticoneTextBoxAdvanced1.PlaceholderColor = System.Drawing.Color.Gray;
+            this.siticoneTextBoxAdvanced1.PlaceholderFont = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.siticoneTextBoxAdvanced1.PlaceholderText = "INFORME O CPF OU CNPJ";
+            this.siticoneTextBoxAdvanced1.ReadOnlyColors.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
+            this.siticoneTextBoxAdvanced1.ReadOnlyColors.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.siticoneTextBoxAdvanced1.ReadOnlyColors.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
+            this.siticoneTextBoxAdvanced1.ReadOnlyColors.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            this.siticoneTextBoxAdvanced1.Size = new System.Drawing.Size(298, 34);
+            this.siticoneTextBoxAdvanced1.TabIndex = 13;
+            this.siticoneTextBoxAdvanced1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            this.siticoneTextBoxAdvanced1.TextContent = "";
+            this.siticoneTextBoxAdvanced1.ValidationPattern = "";
+            // 
+            // siticoneLabel2
+            // 
+            this.siticoneLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.siticoneLabel2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.siticoneLabel2.ForeColor = System.Drawing.Color.White;
+            this.siticoneLabel2.Location = new System.Drawing.Point(35, 140);
+            this.siticoneLabel2.Name = "siticoneLabel2";
+            this.siticoneLabel2.Size = new System.Drawing.Size(156, 24);
+            this.siticoneLabel2.TabIndex = 14;
+            this.siticoneLabel2.Text = "Razão social:";
+            // 
+            // siticoneTextBoxAdvanced2
+            // 
+            this.siticoneTextBoxAdvanced2.BackColor = System.Drawing.Color.Transparent;
+            this.siticoneTextBoxAdvanced2.BackgroundColor = System.Drawing.Color.White;
+            this.siticoneTextBoxAdvanced2.BorderColor = System.Drawing.Color.SteelBlue;
+            this.siticoneTextBoxAdvanced2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.siticoneTextBoxAdvanced2.FocusBorderColor = System.Drawing.Color.DodgerBlue;
+            this.siticoneTextBoxAdvanced2.FocusImage = null;
+            this.siticoneTextBoxAdvanced2.HoverBorderColor = System.Drawing.Color.Gray;
+            this.siticoneTextBoxAdvanced2.HoverImage = null;
+            this.siticoneTextBoxAdvanced2.IdleImage = null;
+            this.siticoneTextBoxAdvanced2.Location = new System.Drawing.Point(181, 136);
+            this.siticoneTextBoxAdvanced2.Name = "siticoneTextBoxAdvanced2";
+            this.siticoneTextBoxAdvanced2.PlaceholderColor = System.Drawing.Color.Gray;
+            this.siticoneTextBoxAdvanced2.PlaceholderFont = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.siticoneTextBoxAdvanced2.PlaceholderText = "INFORME A RAZÃO SOCIAL DE SEU CLIENTE";
+            this.siticoneTextBoxAdvanced2.ReadOnlyColors.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
+            this.siticoneTextBoxAdvanced2.ReadOnlyColors.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.siticoneTextBoxAdvanced2.ReadOnlyColors.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
+            this.siticoneTextBoxAdvanced2.ReadOnlyColors.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            this.siticoneTextBoxAdvanced2.Size = new System.Drawing.Size(298, 34);
+            this.siticoneTextBoxAdvanced2.TabIndex = 15;
+            this.siticoneTextBoxAdvanced2.TextColor = System.Drawing.SystemColors.WindowText;
+            this.siticoneTextBoxAdvanced2.TextContent = "";
+            this.siticoneTextBoxAdvanced2.ValidationPattern = "";
+            // 
+            // siticoneLabel4
+            // 
+            this.siticoneLabel4.BackColor = System.Drawing.Color.Transparent;
+            this.siticoneLabel4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.siticoneLabel4.ForeColor = System.Drawing.Color.White;
+            this.siticoneLabel4.Location = new System.Drawing.Point(503, 140);
+            this.siticoneLabel4.Name = "siticoneLabel4";
+            this.siticoneLabel4.Size = new System.Drawing.Size(181, 24);
+            this.siticoneLabel4.TabIndex = 16;
+            this.siticoneLabel4.Text = "Nome do cliente:";
+            // 
+            // siticoneTextBoxAdvanced3
+            // 
+            this.siticoneTextBoxAdvanced3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.siticoneTextBoxAdvanced3.BackColor = System.Drawing.Color.Transparent;
+            this.siticoneTextBoxAdvanced3.BackgroundColor = System.Drawing.Color.White;
+            this.siticoneTextBoxAdvanced3.BorderColor = System.Drawing.Color.SteelBlue;
+            this.siticoneTextBoxAdvanced3.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.siticoneTextBoxAdvanced3.FocusBorderColor = System.Drawing.Color.DodgerBlue;
+            this.siticoneTextBoxAdvanced3.FocusImage = null;
+            this.siticoneTextBoxAdvanced3.HoverBorderColor = System.Drawing.Color.Gray;
+            this.siticoneTextBoxAdvanced3.HoverImage = null;
+            this.siticoneTextBoxAdvanced3.IdleImage = null;
+            this.siticoneTextBoxAdvanced3.Location = new System.Drawing.Point(689, 136);
+            this.siticoneTextBoxAdvanced3.Name = "siticoneTextBoxAdvanced3";
+            this.siticoneTextBoxAdvanced3.PlaceholderColor = System.Drawing.Color.Gray;
+            this.siticoneTextBoxAdvanced3.PlaceholderFont = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.siticoneTextBoxAdvanced3.PlaceholderText = "INFORME O NOME COMPLETO DO CLIENTE";
+            this.siticoneTextBoxAdvanced3.ReadOnlyColors.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
+            this.siticoneTextBoxAdvanced3.ReadOnlyColors.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.siticoneTextBoxAdvanced3.ReadOnlyColors.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
+            this.siticoneTextBoxAdvanced3.ReadOnlyColors.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            this.siticoneTextBoxAdvanced3.Size = new System.Drawing.Size(422, 34);
+            this.siticoneTextBoxAdvanced3.TabIndex = 17;
+            this.siticoneTextBoxAdvanced3.TextColor = System.Drawing.SystemColors.WindowText;
+            this.siticoneTextBoxAdvanced3.TextContent = "";
+            this.siticoneTextBoxAdvanced3.ValidationPattern = "";
+            // 
+            // siticoneLabel5
+            // 
+            this.siticoneLabel5.BackColor = System.Drawing.Color.Transparent;
+            this.siticoneLabel5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.siticoneLabel5.ForeColor = System.Drawing.Color.White;
+            this.siticoneLabel5.Location = new System.Drawing.Point(79, 189);
+            this.siticoneLabel5.Name = "siticoneLabel5";
+            this.siticoneLabel5.Size = new System.Drawing.Size(101, 24);
+            this.siticoneLabel5.TabIndex = 18;
+            this.siticoneLabel5.Text = "Contato:";
+            // 
+            // siticoneTextBoxAdvanced4
+            // 
+            this.siticoneTextBoxAdvanced4.BackColor = System.Drawing.Color.Transparent;
+            this.siticoneTextBoxAdvanced4.BackgroundColor = System.Drawing.Color.White;
+            this.siticoneTextBoxAdvanced4.BorderColor = System.Drawing.Color.SteelBlue;
+            this.siticoneTextBoxAdvanced4.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.siticoneTextBoxAdvanced4.FocusBorderColor = System.Drawing.Color.DodgerBlue;
+            this.siticoneTextBoxAdvanced4.FocusImage = null;
+            this.siticoneTextBoxAdvanced4.HoverBorderColor = System.Drawing.Color.Gray;
+            this.siticoneTextBoxAdvanced4.HoverImage = null;
+            this.siticoneTextBoxAdvanced4.IdleImage = null;
+            this.siticoneTextBoxAdvanced4.Location = new System.Drawing.Point(181, 185);
+            this.siticoneTextBoxAdvanced4.Name = "siticoneTextBoxAdvanced4";
+            this.siticoneTextBoxAdvanced4.PlaceholderColor = System.Drawing.Color.Gray;
+            this.siticoneTextBoxAdvanced4.PlaceholderFont = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.siticoneTextBoxAdvanced4.PlaceholderText = "INFORME CONTATO DO CLIENTE";
+            this.siticoneTextBoxAdvanced4.ReadOnlyColors.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
+            this.siticoneTextBoxAdvanced4.ReadOnlyColors.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.siticoneTextBoxAdvanced4.ReadOnlyColors.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
+            this.siticoneTextBoxAdvanced4.ReadOnlyColors.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            this.siticoneTextBoxAdvanced4.Size = new System.Drawing.Size(225, 34);
+            this.siticoneTextBoxAdvanced4.TabIndex = 19;
+            this.siticoneTextBoxAdvanced4.TextColor = System.Drawing.SystemColors.WindowText;
+            this.siticoneTextBoxAdvanced4.TextContent = "";
+            this.siticoneTextBoxAdvanced4.ValidationPattern = "";
+            // 
+            // Control_Clientes
+            // 
+            this.Control_Clientes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Control_Clientes.AutoScroll = true;
+            this.Control_Clientes.AutoScrollMinSize = new System.Drawing.Size(0, 20);
+            this.Control_Clientes.BackColor = System.Drawing.Color.Transparent;
+            this.Control_Clientes.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.Control_Clientes.Controls.Add(this.panel1);
+            this.Control_Clientes.Controls.Add(this.siticoneTextBoxAdvanced6);
+            this.Control_Clientes.Controls.Add(this.siticoneLabel7);
+            this.Control_Clientes.Controls.Add(this.siticoneTextBoxAdvanced5);
+            this.Control_Clientes.Controls.Add(this.siticoneLabel6);
+            this.Control_Clientes.Controls.Add(this.radioButton2);
+            this.Control_Clientes.Controls.Add(this.radioButton1);
+            this.Control_Clientes.Controls.Add(this.siticoneTextBoxAdvanced4);
+            this.Control_Clientes.Controls.Add(this.siticoneLabel5);
+            this.Control_Clientes.Controls.Add(this.siticoneTextBoxAdvanced3);
+            this.Control_Clientes.Controls.Add(this.siticoneLabel4);
+            this.Control_Clientes.Controls.Add(this.siticoneTextBoxAdvanced2);
+            this.Control_Clientes.Controls.Add(this.siticoneLabel2);
+            this.Control_Clientes.Controls.Add(this.rjButton1);
+            this.Control_Clientes.Location = new System.Drawing.Point(394, 64);
+            this.Control_Clientes.Name = "Control_Clientes";
+            this.Control_Clientes.Padding = new System.Windows.Forms.Padding(10);
+            this.Control_Clientes.PinnedSectionHeaderBackColor = System.Drawing.Color.White;
+            this.Control_Clientes.PinnedSectionHeaderFont = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.Control_Clientes.SectionHeaderFont = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.Control_Clientes.Size = new System.Drawing.Size(1173, 802);
+            this.Control_Clientes.TabIndex = 13;
+            this.Control_Clientes.UnpinnedSectionHeaderBackColor = System.Drawing.Color.White;
+            this.Control_Clientes.UnpinnedSectionHeaderFont = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.Control_Clientes.Visible = false;
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton1.ForeColor = System.Drawing.Color.White;
+            this.radioButton1.Location = new System.Drawing.Point(415, 190);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(99, 22);
+            this.radioButton1.TabIndex = 20;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "WhatsApp";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton2.ForeColor = System.Drawing.Color.White;
+            this.radioButton2.Location = new System.Drawing.Point(516, 190);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(108, 22);
+            this.radioButton2.TabIndex = 21;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "Residêncial";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // siticoneTextBoxAdvanced5
+            // 
+            this.siticoneTextBoxAdvanced5.BackColor = System.Drawing.Color.Transparent;
+            this.siticoneTextBoxAdvanced5.BackgroundColor = System.Drawing.Color.White;
+            this.siticoneTextBoxAdvanced5.BorderColor = System.Drawing.Color.SteelBlue;
+            this.siticoneTextBoxAdvanced5.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.siticoneTextBoxAdvanced5.FocusBorderColor = System.Drawing.Color.DodgerBlue;
+            this.siticoneTextBoxAdvanced5.FocusImage = null;
+            this.siticoneTextBoxAdvanced5.HoverBorderColor = System.Drawing.Color.Gray;
+            this.siticoneTextBoxAdvanced5.HoverImage = null;
+            this.siticoneTextBoxAdvanced5.IdleImage = null;
+            this.siticoneTextBoxAdvanced5.Location = new System.Drawing.Point(714, 185);
+            this.siticoneTextBoxAdvanced5.Name = "siticoneTextBoxAdvanced5";
+            this.siticoneTextBoxAdvanced5.PlaceholderColor = System.Drawing.Color.Gray;
+            this.siticoneTextBoxAdvanced5.PlaceholderFont = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.siticoneTextBoxAdvanced5.PlaceholderText = "INFORME EMAIL DO CLIENTE";
+            this.siticoneTextBoxAdvanced5.ReadOnlyColors.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
+            this.siticoneTextBoxAdvanced5.ReadOnlyColors.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.siticoneTextBoxAdvanced5.ReadOnlyColors.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
+            this.siticoneTextBoxAdvanced5.ReadOnlyColors.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            this.siticoneTextBoxAdvanced5.Size = new System.Drawing.Size(397, 34);
+            this.siticoneTextBoxAdvanced5.TabIndex = 23;
+            this.siticoneTextBoxAdvanced5.TextColor = System.Drawing.SystemColors.WindowText;
+            this.siticoneTextBoxAdvanced5.TextContent = "";
+            this.siticoneTextBoxAdvanced5.ValidationPattern = "";
+            // 
+            // siticoneLabel6
+            // 
+            this.siticoneLabel6.BackColor = System.Drawing.Color.Transparent;
+            this.siticoneLabel6.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.siticoneLabel6.ForeColor = System.Drawing.Color.White;
+            this.siticoneLabel6.Location = new System.Drawing.Point(639, 189);
+            this.siticoneLabel6.Name = "siticoneLabel6";
+            this.siticoneLabel6.Size = new System.Drawing.Size(101, 24);
+            this.siticoneLabel6.TabIndex = 22;
+            this.siticoneLabel6.Text = "Email:";
+            // 
+            // siticoneTextBoxAdvanced6
+            // 
+            this.siticoneTextBoxAdvanced6.BackColor = System.Drawing.Color.Transparent;
+            this.siticoneTextBoxAdvanced6.BackgroundColor = System.Drawing.Color.White;
+            this.siticoneTextBoxAdvanced6.BorderColor = System.Drawing.Color.SteelBlue;
+            this.siticoneTextBoxAdvanced6.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.siticoneTextBoxAdvanced6.FocusBorderColor = System.Drawing.Color.DodgerBlue;
+            this.siticoneTextBoxAdvanced6.FocusImage = null;
+            this.siticoneTextBoxAdvanced6.HoverBorderColor = System.Drawing.Color.Gray;
+            this.siticoneTextBoxAdvanced6.HoverImage = null;
+            this.siticoneTextBoxAdvanced6.IdleImage = null;
+            this.siticoneTextBoxAdvanced6.Location = new System.Drawing.Point(181, 234);
+            this.siticoneTextBoxAdvanced6.Name = "siticoneTextBoxAdvanced6";
+            this.siticoneTextBoxAdvanced6.PlaceholderColor = System.Drawing.Color.Gray;
+            this.siticoneTextBoxAdvanced6.PlaceholderFont = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.siticoneTextBoxAdvanced6.PlaceholderText = "INFORME CONTATO DO CLIENTE";
+            this.siticoneTextBoxAdvanced6.ReadOnlyColors.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
+            this.siticoneTextBoxAdvanced6.ReadOnlyColors.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.siticoneTextBoxAdvanced6.ReadOnlyColors.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
+            this.siticoneTextBoxAdvanced6.ReadOnlyColors.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            this.siticoneTextBoxAdvanced6.Size = new System.Drawing.Size(225, 34);
+            this.siticoneTextBoxAdvanced6.TabIndex = 25;
+            this.siticoneTextBoxAdvanced6.TextColor = System.Drawing.SystemColors.WindowText;
+            this.siticoneTextBoxAdvanced6.TextContent = "";
+            this.siticoneTextBoxAdvanced6.ValidationPattern = "";
+            // 
+            // siticoneLabel7
+            // 
+            this.siticoneLabel7.BackColor = System.Drawing.Color.Transparent;
+            this.siticoneLabel7.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.siticoneLabel7.ForeColor = System.Drawing.Color.White;
+            this.siticoneLabel7.Location = new System.Drawing.Point(79, 238);
+            this.siticoneLabel7.Name = "siticoneLabel7";
+            this.siticoneLabel7.Size = new System.Drawing.Size(101, 24);
+            this.siticoneLabel7.TabIndex = 24;
+            this.siticoneLabel7.Text = "Contato:";
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton3.ForeColor = System.Drawing.Color.White;
+            this.radioButton3.Location = new System.Drawing.Point(437, 13);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(81, 22);
+            this.radioButton3.TabIndex = 26;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "CNPJ ?";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.siticoneLabel1);
+            this.panel1.Controls.Add(this.radioButton3);
+            this.panel1.Controls.Add(this.siticoneTextBoxAdvanced1);
+            this.panel1.Location = new System.Drawing.Point(50, 82);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(522, 48);
+            this.panel1.TabIndex = 27;
+            // 
             // DashBoard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -323,7 +793,14 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DashBoard";
             this.Painel_de_Controle.ResumeLayout(false);
+            this.Control_PDV.ResumeLayout(false);
+            this.Control_Notas.ResumeLayout(false);
+            this.Control_Mercadorias.ResumeLayout(false);
             this.guna2Panel1.ResumeLayout(false);
+            this.Control_Clientes.ResumeLayout(false);
+            this.Control_Clientes.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -341,6 +818,31 @@
         private RJCodeAdvance.RJControls.RJButton BT_Mercadorias;
         private RJCodeAdvance.RJControls.RJButton BT_Notas;
         private RJCodeAdvance.RJControls.RJButton BT_PDV;
-        private RJCodeAdvance.RJControls.RJButton BT_Fornecedor;
+        private SiticoneNetFrameworkUI.SiticonePinnablePanelHost Control_Fornecedor;
+        private SiticoneNetFrameworkUI.SiticonePinnablePanelHost Control_PDV;
+        private SiticoneNetFrameworkUI.SiticonePinnablePanelHost Control_Notas;
+        private SiticoneNetFrameworkUI.SiticonePinnablePanelHost Control_Mercadorias;
+        private RJCodeAdvance.RJControls.RJButton rjButton5;
+        private RJCodeAdvance.RJControls.RJButton rjButton4;
+        private RJCodeAdvance.RJControls.RJButton rjButton3;
+        private RJCodeAdvance.RJControls.RJButton rjButton2;
+        private SiticoneNetFrameworkUI.SiticonePinnablePanelHost Control_Clientes;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private SiticoneNetFrameworkUI.SiticoneTextBoxAdvanced siticoneTextBoxAdvanced4;
+        private SiticoneNetFrameworkUI.SiticoneLabel siticoneLabel5;
+        private SiticoneNetFrameworkUI.SiticoneTextBoxAdvanced siticoneTextBoxAdvanced3;
+        private SiticoneNetFrameworkUI.SiticoneLabel siticoneLabel4;
+        private SiticoneNetFrameworkUI.SiticoneTextBoxAdvanced siticoneTextBoxAdvanced2;
+        private SiticoneNetFrameworkUI.SiticoneLabel siticoneLabel2;
+        private SiticoneNetFrameworkUI.SiticoneTextBoxAdvanced siticoneTextBoxAdvanced1;
+        private SiticoneNetFrameworkUI.SiticoneLabel siticoneLabel1;
+        private RJCodeAdvance.RJControls.RJButton rjButton1;
+        private SiticoneNetFrameworkUI.SiticoneTextBoxAdvanced siticoneTextBoxAdvanced5;
+        private SiticoneNetFrameworkUI.SiticoneLabel siticoneLabel6;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.RadioButton radioButton3;
+        private SiticoneNetFrameworkUI.SiticoneTextBoxAdvanced siticoneTextBoxAdvanced6;
+        private SiticoneNetFrameworkUI.SiticoneLabel siticoneLabel7;
     }
 }

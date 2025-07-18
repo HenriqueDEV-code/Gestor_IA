@@ -92,14 +92,62 @@ namespace Gestor_IA.Formularios
             Normallizar.Visible = false;
         }
 
+        public void Painel(string painel)
+        {
+           
+
+            Control_Clientes.Visible = false;
+            Control_Mercadorias.Visible = false;
+            Control_Notas.Visible = false;
+            Control_PDV.Visible = false;
+            
+
+            switch (painel)
+            {
+                case "Control_Clientes":
+                    Control_Clientes.Visible = true;
+                    Control_Clientes.BringToFront();
+                    break;
+                case "Control_Mercadorias":
+                    Control_Mercadorias.Visible = true;
+                    Control_Mercadorias.BringToFront();
+                    break;
+                case "Control_Notas":
+                    Control_Notas.Visible = true;
+                    Control_Notas.BringToFront();
+                    break;
+                case "Control_PDV":
+                    Control_PDV.Visible = true;
+                    Control_PDV.BringToFront();
+                    break;
+                
+                default:
+                    
+                    break;
+            }
+        }
+
         private void BT_Clientes_Click(object sender, EventArgs e)
         {
-            
+            Painel("Control_Clientes");
         }
 
         private void BT_Mercadorias_Click(object sender, EventArgs e)
         {
-            
+            Painel("Control_Mercadorias");
+
+        }
+
+        private void BT_Notas_Click(object sender, EventArgs e)
+        {
+            Painel("Control_Notas");
+
+        }
+
+        private void BT_PDV_Click(object sender, EventArgs e)
+        {
+            Painel("Control_PDV");
+
         }
     }
 }
